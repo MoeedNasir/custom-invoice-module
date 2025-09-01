@@ -17,14 +17,17 @@ Module Structure:
 custom_invoice_report/
 │── __init__.py
 │── __manifest__.py
-│── report/
-│   ├── custom_invoice_template.xml
-│   └── custom_invoice_report.xml
+|── i18n/
+     └── ar.po
+│── models/
+│   └── __init__.py
 │── views/
-│   └── invoice_report_views.xml
-│── static/
-│   └── description/
-│       └── icon.png
+│   └── custom_footer.xml
+    └── custom_header.xml
+    └── report.xml
+    └── report_action.xml
+│── security/
+    └── ir.model.access.csv
 
 Installation:
 Copy the module folder custom_invoice_report into your Odoo addons directory.
